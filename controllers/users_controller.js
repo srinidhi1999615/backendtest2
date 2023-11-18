@@ -41,7 +41,7 @@ module.exports.update = async function(req, res) {
     if (!user) {
       return res.status(404).send('User not found');
     }
-    console.log('Request Body:', req.body); // Debugging: Log the request body to check 'password' value
+    
 
     const newPassword = req.body.password;
 
