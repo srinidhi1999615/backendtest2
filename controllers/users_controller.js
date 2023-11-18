@@ -18,7 +18,7 @@ module.exports.profile = async function (req, res) {
       return res.status(404).send('User not found');
     }
 
-    console.log('Found user:', user);
+   
 
     return res.render('users_profile', {
       title: 'User Profile',
